@@ -9,7 +9,7 @@ class Menu extends StatelessWidget {
         appBar: AppBar(
           
         ),
-        body: CircleAvatar(),
+        body: Text(),
     );
   }
 }
