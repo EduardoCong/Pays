@@ -48,7 +48,7 @@ class ExampleExpandableFab extends StatelessWidget {
         },
       ),
       floatingActionButton: ExpandableFab(
-        distance: 112,
+        distance: 100,
         children: [
           ActionButton(
             onPressed: () => _showAction(context, 0),
@@ -297,3 +297,6 @@ class FakeItem extends StatelessWidget {
     );
   }
 }
+
+
+//https://www.youtube.com/watch?v=rHIFJo4IbOE
