@@ -13,7 +13,7 @@ class myApp extends StatelessWidget{
       theme: ThemeData(
         primaryColor: Colors.amber
       ),
-      home: Menu(title: "Menu"),
+      home: const ExampleExpandableFab(),
     );
   }
 }
