@@ -1,19 +1,42 @@
-import 'package:ejemplo_job/pages/menu.dart';
+import 'package:ejemplo_job/Screens/onboding/onboding_screen.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(const myApp());
+void main() {
+runApp(const MyApp());
+}
 
-class myApp extends StatelessWidget{
-  const myApp({super.key});
+class MyApp extends StatelessWidget{
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context){
     return MaterialApp(
-      title: "Dashboard",
+      title: "Inmobiliaria",
       theme: ThemeData(
-        primaryColor: Colors.amber
+        scaffoldBackgroundColor: const Color(0xFFEEF1F8),
+        fontFamily: "Intel",
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(foregroundColor: Colors.white)
+        ),
+        inputDecorationTheme: const InputDecorationTheme(
+          filled: true,
+          fillColor: Colors.white,
+          errorStyle: TextStyle(height: 10.0),
+          border: defaultInputBorder,
+          enabledBorder: defaultInputBorder,
+          focusedBorder: defaultInputBorder,
+          errorBorder: defaultInputBorder,
+        )
       ),
-      home: const ExampleExpandableFab(),
+      home: const OnbodingScreen(),
     );
   }
 }
+
+const defaultInputBorder = OutlineInputBorder(
+  borderRadius: BorderRadius.all(Radius.circular(16.0)),
+  borderSide: BorderSide(
+    color: Color(0xFFDEE3F2),
+    width: 1,
+  )
+);
